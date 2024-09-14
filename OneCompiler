@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    
+  </head>
+  <body>
+    
+    <meta charset="utf-8"/>
+    
+    
+      <h1 class="title">Hello World! </h1>
+      
+      <p id="currentTime"></p>
+      
+      <script src="script.js"></script>
+      
+      <table>
+        <thead>
+        </tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Feijão</td>
+        <td>R$ 8,75</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td>Arroz</td>
+        <td>R$ 4,99</td>
+        <td>2</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+        <td>Total</td>
+        <td></td>
+        <td>R$ 18,73</td>
+        </tr>
+        </tfoot>
+      </table>
+      
+      <h4 class="title">Cabeçalho, corpo e rodapé da tabela</h4>
+      
+      
+      <table summary="A nossa loja, Metal & Cia, oferece uma grande variedade de instrumentos"
+        <caption>Catálogo da Metal & Cia</caption>
+        <thead>
+        <tr><th colspan="4">Tabela de preços</th></tr>
+        </thead>
+        <tfoot>
+        <tr><td colspan="4">Visite nossa loja</td></tr>
+        </tfoot>
+        <tbody>
+        <tr>
+        <td rowspan="2">Seminovos</td>
+        <td>Trompete</td>
+        <td>Trombone</td>
+        <td>Trompa</td>
+        </tr>
+        <tr>
+        <td>$500</td>
+        <td>$640</td>
+        <td>$650</td>
+        </tr>
+        </tbody>
+      </table>
+      
+      
+  </body>
+</html>
+
+
+
+
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+
+
+
+
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
